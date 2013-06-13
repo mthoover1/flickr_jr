@@ -18,6 +18,17 @@
   <title></title>
 </head>
 <body>
-  <%= yield %>
+  <nav>
+    <div id="title">
+      <a href="/">flickr</a>
+    </div>
+    <div id="nav-links">
+      <div><a href="/signup">Sign Up</a></div>
+      <div><a href="/upload">Upload</a></div>
+    </div>
+  </nav>
+  <div class="container">
+    <%= yield %>
+  </div>
 </body>
 </html>

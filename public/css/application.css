@@ -1,9 +1,58 @@
-.container {
-  margin: 20px auto;
-  width: 600px;
-  padding: 0px 20px 20px 20px;
-  border: 1px dotted black;
+nav {
+  width: 100%;
+  height: 46px;
+  background: #000000; /* Old browsers */
+  background: -moz-linear-gradient(top,  #000000 0%, #323232 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#000000), color-stop(100%,#323232)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #000000 0%,#323232 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #000000 0%,#323232 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #000000 0%,#323232 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  #000000 0%,#323232 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#323232',GradientType=0 ); /* IE6-9 */
 }
+
+#title {
+  display: inline;
+  margin-right: 34px; 
+}
+
+#title a, #title a:hover, #title a:visited {
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 46px;
+  padding-left: 15px;
+  text-decoration: none;
+}
+
+#nav-links {
+  display: inline;
+}
+
+#nav-links div {
+  display: inline;
+  margin-right: 20px;
+}
+
+#nav-links a, #nav-links a:visited {
+  color: white;
+  font-size: 14px;
+  line-height: 46px;
+  text-decoration: none;
+}
+
+#nav-links a:hover {
+  color: #F3007D;
+}
+
+.container {
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  margin: 0;
+  padding: 0;
+}
+
 th {
   text-align: left;
 }
