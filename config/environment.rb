@@ -15,6 +15,9 @@ require 'pg'
 require 'active_record'
 require 'logger'
 
+require "mini_magick"
+require 'carrierwave'
+
 require 'sinatra'
 require "sinatra/reloader" if development?
 
