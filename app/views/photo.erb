@@ -1,0 +1,9 @@
+<h1><%= @photo.name %></h1>
+<p>by <a href="/users/<%= @user.id %>/albums"><%= @user.username %></a></p>
+
+
+<div class="photo-background">
+  <div class="photo-container">
+    <img class="photo" src="<%= @photo.url %>">
+  </div>
+</div>

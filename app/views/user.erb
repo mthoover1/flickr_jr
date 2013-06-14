@@ -1,0 +1,10 @@
+<h1><%= @user.username %> - albums</h1>
+
+<table>
+<% @albums.each do |album| %>
+  <tr>
+    <td class="album-cover"><a href="/albums/<%= album.id %>"><img src="<%= album.photos.sample.url %>"></a></td>
+    <td class="album-name"><a href="/albums/<%= album.id %>"><%= album.name %></a><span class="album-size"><%= album.photos.count %> photos</span></td>
+  </tr>
+<% end %>
+</table>

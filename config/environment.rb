@@ -15,6 +15,8 @@ require 'pg'
 require 'active_record'
 require 'logger'
 
+require 'bcrypt'
+
 require "mini_magick"
 require 'carrierwave'
 

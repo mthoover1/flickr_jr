@@ -1,0 +1,8 @@
+<h1><%= @album.name %></h1>
+<p>by <a href="/users/<%= @user.id %>/albums"><%= @user.username %></a></p>
+
+<% @album.photos.each do |photo| %>
+  <div class="new-photo-wall">
+    <a href="/albums/<%= @album.id %>/<%= photo.id %>"><img src="<%= photo.url %>"></a>
+  </div>
+<% end %>

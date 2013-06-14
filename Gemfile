@@ -17,6 +17,8 @@ gem 'rake'
 
 gem 'shotgun'
 
+gem 'bcrypt-ruby'
+
 gem "mini_magick"
 gem 'carrierwave'
 
