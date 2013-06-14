@@ -12,6 +12,13 @@ end
 get '/albums/:album_id/:photo_id' do
   @photo = Photo.find(params[:photo_id])
   @user = User.find(Album.find(@photo.album_id).user_id)
+  @album = Album.find(params[:album_id])
+  
+  @album_photo_ids = []
+  @album.photos.each do |photo|
+    @album_photo_ids << photo.id
+  end
+
   erb :photo
 end
 
@@ -47,4 +54,21 @@ post '/createuser' do
   user = User.create_user(params[:user])
   session[:id] = user.id
   redirect '/'
+end
+
+post '/albums/:album_id/:photo_id' do
+  @photo = Photo.find(params[:photo_id])
+  @user = User.find(Album.find(@photo.album_id).user_id)
+  @album = Album.find(params[:album_id])
+
+  p @photo
+  p @user
+  p @album
+  
+  @album_photo_ids = []
+  @album.photos.each do |photo|
+    @album_photo_ids << photo.id
+  end
+
+  redirect "/albums/#{@album.id}/#{@photo.id}"
 end
