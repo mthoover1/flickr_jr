@@ -33,7 +33,9 @@ $(document).ready(function() {
     var position = album_photo_ids.indexOf(photo_id);
 
     if (position > -1) {
-      $.post("/albums/" + album_id_string + "/" + id_reduced[position+1]);
+      $.post("/albums/" + album_id_string + "/" + id_reduced[position+1], function(response){
+        $('body').html(response);
+      });
     }
     else {
       $.post("/albums/" + album_id + "/" + album_photo_ids[0]);
