@@ -59,8 +59,8 @@ h1 {
 
 .new-photo-wall {
   display: inline-block;
-  margin: 2px%;
   width: 33%;
+  /*margin: 5px 0;*/
 }
 
 .new-photo-wall img {
@@ -121,6 +121,30 @@ h1 {
   padding: 0;
   margin: 0;
   margin: 36px auto;
+}
+
+.next {
+  position: fixed;
+  right: 5px;
+  background-color: white;
+  width: 50px;
+  height: 25px;
+}
+
+#next {
+
+}
+
+.prev {
+  position: fixed;
+  left: 5px;
+  background-color: white;
+  width: 50px;
+  height: 25px;
+}
+
+#prev {
+
 }
 
 form input{
